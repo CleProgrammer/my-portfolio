@@ -65,7 +65,9 @@ a {
 
 .principal div img {
     width: 150px;
+    height: 150px;
     margin-bottom: 10px;
+    
 }
 
 .principal .desc {
@@ -132,8 +134,10 @@ a {
 }
 
 .modal img {
-    width: 50%;
+    width: 180px;
+    height: 180px;
     margin-bottom: 35px;
+    background-color: black;
     
 }
 
@@ -338,8 +342,10 @@ a {
 }
 
 .modal-cart .modal img {
-    width: 50%;
+    width: 45px;
+    height: 45px;
     margin-top: -10px;
+    background-color: black;
 }
 
 .modal-cart .modal .modal-soma {
