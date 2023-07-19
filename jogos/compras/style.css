@@ -64,15 +64,15 @@ a {
 }
 
 .principal div img {
-    margin-top: -50px;
     width: 150px;
+    margin-bottom: 10px;
 }
 
 .principal .desc {
     color: rgb(136, 136, 136);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    margin-top: -30px;
+    margin-top: 0px;
 }
 
 .principal .preco {
@@ -132,8 +132,9 @@ a {
 }
 
 .modal img {
-    width: 55%;
-    margin-top: -80px;
+    width: 50%;
+    margin-bottom: 35px;
+    
 }
 
 .modal .desc {
@@ -321,9 +322,6 @@ a {
 .modal-cart .modal {
     width: 12vw;
     height: 17vh;
-    /*width: 175px;
-    height: 120px;
-    padding: 10px;*/
     background-color: orangered;
     border: 2px solid white;
     box-shadow: none;
@@ -332,7 +330,7 @@ a {
 }
 
 .modal-cart .modal .desc {
-    margin-top: -20px;
+    margin-bottom: 18px;
     font-weight: bold;
     font-size: 10px;
     width: 100%;
@@ -340,15 +338,14 @@ a {
 }
 
 .modal-cart .modal img {
-    width: 60%;
-    margin-top: -30px;
+    width: 50%;
+    margin-top: -10px;
 }
 
 .modal-cart .modal .modal-soma {
     display: flex;
     justify-content: space-around;
     margin-left: 3vw;
-    margin-top: 3vh;
     height: 0px;
     width: 6vw;
 }
@@ -366,13 +363,11 @@ a {
     font-size: 18px;
     padding: 3px;
     background-color: white;
-    margin-top: 14vh;
 }
 
 .modal-cart .modal .modal-mais, 
 .modal-cart .modal .modal-menos,
 .modal-cart .modal .modal-quant {
-    margin-top: 14vh;
     width: 2vw;
     height: 3vh;
 }
@@ -381,11 +376,10 @@ a {
     width: 20px;
     height: 20px;
     font-size: 15px;
-    margin-top: -11vh;
+    margin-top: -16vh;
     background-color: white;
-    margin-left: -1vw;
+    margin-left: -2vw;
     color: orangered;
-    position: inherit;
 }
 
 .cart-box0 {
