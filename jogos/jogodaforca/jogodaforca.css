@@ -1,0 +1,438 @@
+@keyframes pisca {
+  0% {opacity: 0.2}
+  50% {opacity: 1}
+  100% {opacity: 0.2}
+}
+
+@keyframes pisca1 {
+  0% {font-size: 35px}
+  50% {font-size: 40px}
+  100% {font-size: 35px
+  }
+}
+
+body {
+  margin: 50px;
+  background-color: black;
+}
+
+
+.backTohome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  background-color: orangered;
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.backTohome a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.principal {
+  background-color: black;
+  width: 100%;
+  /*height: 100vh;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dicas {
+  position: absolute;
+  margin-left: 170px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dicas .dica-principal {
+  font-size: 20px;
+  color: white;
+}
+
+.corda {
+  width: 5px;
+  height: 40px;
+  background-color: orange;
+  position: absolute;
+  margin-left: 70px;
+}
+
+.cabeca {
+  width: 20px;
+  height: 20px;
+  border: 5px solid white;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 58px;
+  margin-top: 40px;
+  display: none;
+}
+
+.torax {
+  width: 5px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 70px;
+  display: none;
+}
+
+.braco {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  margin-left: 47px;
+  margin-top: 82px;
+  transform: rotate(-45deg);
+  display: none;
+}
+
+.braco2 {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  margin-left: 68px;
+  margin-top: 82px;
+  transform: rotate(220deg);
+  display: none;
+}
+
+.perna {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  margin-left: 47px;
+  margin-top: 125px;
+  transform: rotate(-45deg);
+  display: none;
+}
+
+.perna2 {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  margin-left: 68px;
+  margin-top: 125px;
+  transform: rotate(220deg);
+  display: none;
+}
+
+input {
+  background-color: black;
+  color: white;
+}
+
+.letracerta {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+}
+
+#letra1 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 30px;
+  text-transform: uppercase;
+}
+
+#letra2 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 30px;
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+
+#letra3 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 30px;
+  margin-left: 60px;
+  text-transform: uppercase;
+}
+
+#letra4 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 30px;
+  margin-left: 90px;
+  text-transform: uppercase;
+}
+
+#letra5 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 30px;
+  margin-left: 120px;
+  text-transform: uppercase;
+}
+
+#letra6 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 30px;
+  margin-left: 150px;
+  text-transform: uppercase;
+}
+
+#letra7 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 30px;
+  margin-left: 180px;
+  text-transform: uppercase;
+}
+
+#letra8 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 30px;
+  margin-left: 210px;
+  text-transform: uppercase;
+}
+
+#letra9 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 30px;
+  margin-left: 240px;
+  text-transform: uppercase;
+}
+
+#letra10 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 30px;
+  margin-left: 270px;
+  text-transform: uppercase;
+}
+
+.letra {
+  margin-top: 50px;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container1 div {
+  width: 90px;
+  height: 10px;
+  background-color: brown;
+}
+
+.container {
+  width: 180px;
+  height: 180px;
+  /*display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;*/
+}
+
+.container div {
+  width: 10px;
+  height: 50px;
+  background-color: brown;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+body .resp {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: brown;
+  position: absolute;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: -37px;
+  justify-content: center;
+  animation-name: pisca;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.perdeu {
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 85px;
+  margin-left: 165px;
+  text-transform: uppercase;
+}
+
+.teclas {
+  width: 400px;
+  height: 150px;
+  margin-top: 80px;
+  margin-left: -45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.key {
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  margin-right: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.jogarnov {
+  padding: 5px;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 555px;
+  margin-top: 100px;
+}
+
+.jogarnov:hover {
+  background-color: brown;
+  border: none;
+  color: white;
+}
+
+
+
+/*Tablet*/
+@media (min-width: 426px) and (max-width: 768px) {
+  .jogarnov {
+    margin-top: -400px;
+  }
+}
+
+
+/*Large Mobile*/
+@media (max-width: 425px) {
+  body {
+    margin: auto;
+  }
+
+  .principal {
+    background-color: black;
+    width: 100%;
+    /*height: 100vh;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  body .resp {
+    font-size: 35px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .jogarnov {
+    margin-left: 200px;
+  }
+
+  .backTohome {
+    margin-left: 50px;
+    margin-top: 510px;
+  }
+}
+
+@media (max-width: 320px) {
+  .teclas {
+    width: 330px;
+    height: 150px;
+    margin-top: 80px;
+    margin-left: -45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .key {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    margin-right: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+  }
+
+  .jogarnov {
+    margin-left: 160px;
+    margin-top: 96px;
+  }
+}

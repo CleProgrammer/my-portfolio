@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="principal">
+        <div id="box" class="box1" myId="id1">
+            <div class="adic-car" title="Mais detalhes" onclick="adicionar('.box1')">
+                +
+            </div>
+            <img src="/images/imagestenis/tenis1.png" alt="">
+            <div class="desc">
+                Tênis Nike Air Max 270 React | Masculino
+            </div>
+            <div class="preco">Preço: R$100.00</div>
+            <span>100</span>
+        </div>
+        <div id="box" class="box2" myId="id2">
+            <div class="adic-car" title="Mais detalhes" onclick="adicionar('.box2')">
+                +
+            </div>
+            <img src="/images/imagestenis/tenis2.jpg" alt="">
+            <div class="desc">                
+                Tênis Nike Air Max 95 ND Masculino. Nike
+            </div>
+            <div class="preco">Preço: R$180.00</div>
+            <span>180</span>
+        </div>
+        <div id="box" class="box3" myId="id3">
+            <div class="adic-car" title="Mais detalhes" onclick="adicionar('.box3')">
+                +
+            </div>
+            <img src="/images/imagestenis/tenis3.webp" alt="">
+            <div class="desc">    
+                Tênis Nike Downshifter 7 Masculino | Nike.com
+            </div>
+            <div class="preco">Preço: R$85.00</div>
+            <span>85</span>
+        </div>
+        <div id="box" class="box4" myId="id4">
+            <div class="adic-car" title="Mais detalhes" onclick="adicionar('.box4')">
+                +
+            </div>
+            <img src="/images/imagestenis/tenis4.png" alt="">
+            <div class="desc">             
+                Tênis Nike Air Max 950 Masculino | Nike.com
+            </div>
+            <div class="preco">Preço: R$250.00</div>
+            <span>250</span>
+        </div>
+        <div id="box" class="box5" myId="id5">
+            <div class="adic-car" title="Mais detalhes" onclick="adicionar('.box5')">
+                +
+            </div>
+            <img src="/images/imagestenis/tenis5.webp" alt="">
+            <div class="desc">
+                Tênis Nike M2K Tekno Feminino | Nike.com
+            </div>
+            <div class="preco">Preço: R$160.00</div>
+            <span>160</span>
+        </div>
+        <div id="box" class="box6" myId="id6">
+            <div class="adic-car" title="Mais detalhes" onclick="adicionar('.box6')">
+                +
+            </div>
+            <img src="/images/imagestenis/tenis6.webp" alt="">
+            <div class="desc">
+                Tênis Nike Air Max 97 Masculino | Nike.com
+            </div>
+            <div class="preco">Preço: R$50.00</div>
+            <span>50</span>
+        </div>
+    </div>
+    <div class="principal-box-block">
+        <div class="block-products">
+            <div class="close-block-products" onclick="closeBlockProducts()">X</div>
+            <div class="text-block-products">ESSE PRODUTO JÁ ESTÁ NO CARRINHO</div>
+        </div>
+    </div>
+    <div class="back-modal"></div>
+    <div class="modal">
+        <div class="close-modal" onclick="closeModal()">X</div>
+        <div class="modal-soma">
+            <div class="modal-preco-R">
+                <div class="soma-preco"></div>
+            </div>
+            <div class="modal-menos" onclick="modalSoma('.modal-menos')">
+                -
+            </div>
+            <div class="modal-quant"></div>
+            <div class="modal-mais" onclick="modalSoma('.modal-mais')">
+                +
+            </div>
+        </div>
+        <div class="cancel-adic">
+            <div class="adic-cart" onclick="adicCart()">ADIC. CARRINHO</div>
+            <div class="cancel" onclick="cancelarProductModel()">CANCELAR</div>
+        </div>
+    </div>
+    <div class="modal-cart">
+        <div class="cart-box0">
+        </div>
+        <div class="cart-preco-total">
+            <div class="preco-total"></div>
+        </div>
+        <div class="cart-buttons">
+            <div class="end-buy" onclick="finCart()"><a href="page2.html">Fin. Compra</a></div>
+            <div class="cancelar-buy" onclick="cancelarCart()">Cancelar</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

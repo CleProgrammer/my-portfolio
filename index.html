@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clebson Front-End</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="screen">
+    <header class="header-principal">
+        <div class="header-left">
+            <a href="./index.html"><img src="./images/cb-icon.png" alt=""></a>
+        </div>
+        <div class="header-right">
+            <nav>
+                <div class="menu-principal">
+                    <div class="menu">
+                        <div><a href="./index.html">Início</a></div>
+                    </div>
+                    <div class="menu">
+                        <div>Serviços</div>
+                    </div>
+                    <div class="menu jogos">
+                        <div class="jogos">Jogos</div>
+                        <div class="jogosModal">
+                            <li><a href="./jogos/compras/index.html">Mini-Store</a></li>
+                            <li><a href="./jogos/jogodavelha/jogodavelha.html">Jogo da Velha</a></li>
+                            <li><a href="./jogos/jogodaforca/jogodaforca.html">Jogo da Forca</a></li>
+                            <li><a href="./jogos/jogodamemoria/jogodamemoria.html">Jogo da Memória</a></li>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div><a href="./contato/contato.html">Contato</a></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="slider">
+            <div class="slider--width">
+                <div id="item1" class="slider--item">
+                    <div class="slider-principal">
+                        <div class="slider-principal-logo"><img src="./images/cb-icon-blue.png" alt=""></div>
+                        <div class="slider-principal--title"></div>
+                        <div class="slider-principal--sub-title">sempre buscando evoluir mais a cada dia</div>
+                    </div>
+                    
+                </div>
+                <div id="item2" class="slider--item">
+                   <a href="./jogos/compras/index.html"><video autoplay loop muted src="./videos/mini-store.mp4"></video></a>
+                </div>
+                <div id="item3" class="slider--item">
+                    <a href="./jogos/jogodavelha/jogodavelha.html"><video autoplay loop muted src="./videos/jogodavelha.mp4"></video></a>
+                </div>
+                <div id="item4" class="slider--item" >
+                    <a href="./jogos/jogodamemoria/jogodamemoria.html"><video autoplay loop muted src="./videos/jogodamemoria.mp4"></video></a>
+                </div>
+                <div id="item5" class="slider--item">
+                    <a href="./jogos/jogodaforca/jogodaforca.html"><video autoplay loop muted src="./videos/jogodaforca.mp4"></video></a>
+                 </div>
+            </div>
+            <div class="slider--controls">
+                <div id="slide" class="slide1 slideBackground" onclick="slide('slide1')"></div>
+                <div id="slide" class="slide2" onclick="slide('slide2')"></div>
+                <div id="slide" class="slide3" onclick="slide('slide3')"></div>
+                <div id="slide" class="slide4" onclick="slide('slide4')"></div>
+                <div id="slide" class="slide5" onclick="slide('slide5')"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section-news-main">
+        <div class="section-news-principal">
+            <div class="box1" title="Ver Certificados">
+                <div class="box1-title">C E R T I F I C A D O S</div>
+                <div class="box1-info">
+                    <img src="./images/front-end.png" alt="">
+                </div>
+            </div>
+            <div class="box2" title="Ver Certificados">
+                <img src="./images/dev1.jpg" alt="">
+
+            </div>
+            <div class="box-modal">
+                <div id="img-cert" class="cert-html">
+                    <div class="html-title">HTML5</div>
+                    <div id="cert-bigModal--img" class="cert-html--img"><img src="./images/html5css3.jpg" alt=""></div>
+                </div>
+                <div id="img-cert" class="cert-css">
+                    <div class="css-title">CSS3</div>
+                    <div id="cert-bigModal--img" class="cert-css--img"><img src="./images/html5css3.jpg" alt=""></div>
+                </div>
+                <div id="img-cert" class="cert-js">
+                    <div class="js-title">JavaScript</div>
+                    <div id="cert-bigModal--img" class="cert-js--img"><img src="./images/javascript.jpg" alt=""></div>
+                </div>
+                <div id="img-cert" class="cert-ts">
+                    <div class="ts-title">TypeScript</div>
+                    <div id="cert-bigModal--img" class="cert-ts--img"><img src="./images/typescript.jpg" alt=""></div>
+                </div>
+                <div class="backtoBox1">←</div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="section2">
+        <div class="section-circle"><img src="./images/dev2.jpg" alt=""></div>
+        <div class="section-desc">
+            <div class="section-desc-inside">
+                <div class="about-me">Sobre mim</div>
+                <div class="underline-about-me">
+    
+                </div>
+            </div>
+            <div class="about-me--desc">
+                Desenvolvedor front-end, sempre buscando evoluir mais a cada dia, tenho certificação em HTML5, CSS3, JavaScript e TypeScript, mas também buscando aprender outras linguagens de programação.
+
+Tenho foco e muita dedicação no que eu faço, principalmente na área de tecnologia. Me considero uma pessoa que gosta de desafios para fortalecer meus conhecimenos.
+            </div>
+        </div>
+    </section>
+    <div class="modal-img--cert">
+        <div class="buttonClose">X</div>
+    </div>
+    
+    <footer>
+        <div class="div-footer">
+            <div>
+                <div>Início</div>
+                <div>Jogos</div>
+                <div>Contato</div>
+            </div>
+            <div>
+                <div>Jogo da Velha</div>
+                <div>Jogo da Forca</div>
+                <div>Jogo da Memória</div>
+            </div>
+            <div class="contact-footer">
+                <div>Email</div>
+                <div>Celular</div>
+                <div>Linkedin</div>
+            </div>
+            <div class="footer-social-media">
+                <div><img src="./images/instagram-logo.png" alt=""></div>
+                <div><img src="./images/whatsapp-logo.png" alt=""></div>
+                <div><img src="./images/linkedinblue-icon.png" alt=""></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

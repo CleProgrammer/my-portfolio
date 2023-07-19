@@ -1,0 +1,394 @@
+@keyframes pisca {
+    0% {opacity: 0%;}
+    50%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-principal {
+    height: 80px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*margin: 0px 50px;*/
+    background-color: rgb(0, 0, 0);
+}
+
+.header-left img {
+    width: 20%;
+}
+
+
+
+
+/*Novo Menu*/
+.header-right .menu-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    /*position: absolute;*/
+}
+
+.header-right .menu.jogos {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    /*margin-top: 120px;*/
+}
+
+.header-right .jogosModal {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -35px;
+    /*margin-left: 330px;
+    margin-top: 30px;*/
+    display: none;
+}
+
+.header-right .jogosModal li {
+    width: 130px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    color: white;
+    padding: 5px;
+}
+
+.header-right .jogosModal li:hover {
+    border: 1px solid white;
+}
+
+
+
+
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 380px;
+}
+
+.section-contact .contact-me {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.section-contact .contact-ways {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(0, 118, 197);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#size-contact--box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 340px;
+    height: 150px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+}
+
+#size-contact--box img{
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0, 80, 145);
+    padding: 20px 50px;
+}
+
+.div-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+.div-footer .footer-social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    padding: 3px;
+}
+
+.div-footer .footer-social-media img{
+    width: 40%;
+}
+
+.div-footer .footer-social-media:hover {
+    border: 1px solid rgb(0, 94, 172);
+}
+
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .header-principal {
+        height: 100px;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*margin: 0px 50px;*/
+        background-color: black;
+    }
+    
+    .header-left img {
+        width: 80px;
+    }
+    
+    /*Novo Menu*/
+    .header-right .menu-principal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    
+    .header-right .menu.jogos {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        /*margin-top: 120px;*/
+    }
+    
+    .header-right .jogosModal {
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-top: 30px;
+        margin-left: -35px;
+        /*margin-left: 330px;
+        margin-top: 30px;*/
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .header-right .jogosModal li {
+        width: 130px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        /*background-color: rgba(0, 0, 0, 0.5);*/
+        color: white;
+        padding: 5px;
+    }
+    
+    .header-right .jogosModal li:hover {
+        border: 1px solid white;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .header-principal {
+        height: 100px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*margin: 0px 50px;*/
+        background-color: black;
+    }
+    
+    .header-left img {
+        width: 60px;
+    }
+    
+    /*Novo Menu*/
+    .header-right .menu-principal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 230px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    
+    .header-right .menu.jogos {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        /*margin-top: 120px;*/
+    }
+    
+    .header-right .jogosModal {
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-top: 50px;
+        margin-left: -150px;
+        /*margin-left: 330px;
+        margin-top: 30px;*/
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .header-right .jogosModal li {
+        width: 130px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        /*background-color: rgba(0, 0, 0, 0.5);*/
+        color: white;
+        padding: 5px;
+    }
+    
+    .header-right .jogosModal li:hover {
+        border: 1px solid white;
+    }
+    
+    .section-contact .contact-me {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    
+    .section-contact .contact-ways {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: rgb(0, 118, 197);
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+    #size-contact--box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 340px;
+        height: 150px;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 10px;
+    }
+    
+    #size-contact--box img{
+        width: 20%;
+    }
+    
+
+
+
+     footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 130px;
+        background-color: rgb(0, 80, 145);
+        padding: 20px 50px;
+        margin-top: 200px;
+    }
+    
+    .div-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 25px;
+        font-size: 12px;
+    }
+    
+    .div-footer .footer-social-media {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50px;
+        padding: 3px;
+    }
+    
+    .div-footer .footer-social-media img{
+        width: 40%;
+    }
+    
+    .div-footer .footer-social-media:hover {
+        border: 1px solid rgb(0, 94, 172);
+    }
+}

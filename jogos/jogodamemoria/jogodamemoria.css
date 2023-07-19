@@ -1,0 +1,236 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+
+
+.backTohome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background-color: orangered;
+    position: absolute;
+    margin-left: -1200px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .backTohome a {
+    text-decoration: none;
+    color: white;
+  }
+
+
+
+
+
+.principal {
+    width: 60%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6,
+#card7,
+#card8,
+#card9,
+#card10,
+#card11,
+#card12,
+#card13,
+#card14,
+#card15,
+#card16,
+#card17,
+#card18,
+#card19,
+#card20,
+#card21,
+#card22,
+#card23,
+#card24,
+#card25,
+#card26,
+#card27,
+#card28,
+#card29,
+#card30 {
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: all .5s;
+    cursor: pointer;
+    margin: 10px 60px 60px 60px;
+}
+
+.face {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#front {
+    background-color: rgb(0, 152, 223);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+#back {
+    background-color: rgb(255, 255, 255);
+    backface-visibility: hidden;
+}
+
+#back img {
+    width: 55%;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .principal {
+        width: 90%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+    }
+
+    .face {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: absolute;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .backTohome {
+        margin-left: -630px;
+        margin-top: 525px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .principal {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+    }
+
+    #card1,
+    #card2,
+    #card3,
+    #card4,
+    #card5,
+    #card6,
+    #card7,
+    #card8,
+    #card9,
+    #card10,
+    #card11,
+    #card12,
+    #card13,
+    #card14,
+    #card15,
+    #card16,
+    #card17,
+    #card18,
+    #card19,
+    #card20,
+    #card21,
+    #card22,
+    #card23,
+    #card24,
+    #card25,
+    #card26,
+    #card27,
+    #card28,
+    #card29,
+    #card30 {
+        display: flex;
+        justify-content: center;
+        transform-style: preserve-3d;
+        transition: all .5s;
+        cursor: pointer;
+        margin: 0px 30px 0px 30px;
+    }
+
+    .face {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: absolute;
+        border-radius: 10px;
+        font-size: 8px;
+    }
+
+    .backTohome {
+        margin-left: -630px;
+        margin-top: 525px;
+        height: 30px;
+    }
+
+    .backTohome {
+        margin-left: -250px;
+        margin-top: 500px;
+    }
+} 
+
+@media (max-width: 320px) {
+    .principal {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+    }
+
+    .backTohome {
+        margin-left: -170px;
+        margin-top: 520px;
+    }
+}
+

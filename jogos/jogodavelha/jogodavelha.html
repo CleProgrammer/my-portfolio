@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="stylejogodavelha.css">
+</head>
+<body>
+    <div class="mainScore">
+        <img class="emojiPlayer" src="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f928.png" alt="">
+        <div class="player">0</div>
+        <div class="score">PLACAR</div>
+        <img class="emojiBot" src="https://images.emojiterra.com/google/android-nougat/512px/1f916.png" alt="">
+        <div class="smartBot">0</div>
+    </div>
+    <div class="title">JOGO DA VELHA</div>
+    <button class="rec" onclick="rec()">JOGAR NOVAMENTE</button>
+    <div class="container">
+        <div class="pos1" onclick="clicar('.pos1')"></div>
+        <div class="pos2" onclick="clicar('.pos2')"></div>
+        <div class="pos3" onclick="clicar('.pos3')"></div>
+        <div class="pos4" onclick="clicar('.pos4')"></div>
+        <div class="pos5" onclick="clicar('.pos5')"></div>
+        <div class="pos6" onclick="clicar('.pos6')"></div>
+        <div class="pos7" onclick="clicar('.pos7')"></div>
+        <div class="pos8" onclick="clicar('.pos8')"></div>
+        <div class="pos9" onclick="clicar('.pos9')"></div>
+    </div>
+    <div class="choose">
+        <div class="xo" onclick="xo('X')">X</div>
+        <div class="xo1" onclick="xo('O')">O</div>
+    </div>
+    <div class="venceu"></div>
+    <script src="scriptjogodavelha.js"></script>
+</body>
+</html>
