@@ -150,3 +150,29 @@ c('.buttonClose').addEventListener('click', ()=>{
     c('.modal-img--cert').style.display = 'none'
     c('.modal-img--cert img').remove()
 })
+
+function dayOrnight() {
+    if(c('.dayOrnight').id === 'luaAtiva') {
+        document.body.style.backgroundColor = 'white'
+        c('.header-principal').style.backgroundColor = 'white'
+        c('.header-right .menu-principal').style.color = 'gray'
+        c('.section2 .section-desc .about-me').style.color = 'gray'
+        c('.div-footer').style.backgroundColor = 'white'
+        c('.div-footer').style.color = 'gray'
+        c('.div-footer').style.fontWeight = '500'
+        c('.header-left img').src = './images/cb-logo-blue.png'
+        c('.dayOrnight').style.backgroundImage = 'url(https://images.emojiterra.com/google/android-nougat/512px/2600.png)'
+        c('.dayOrnight').id = 'solAtivo'
+    } else {
+        document.body.style.backgroundColor = 'black'
+        c('.header-principal').style.backgroundColor = 'black'
+        c('.header-right .menu-principal').style.color = 'white'
+        c('.section2 .section-desc .about-me').style.color = 'white'
+        c('.div-footer').style.backgroundColor = 'black'
+        c('.div-footer').style.color = 'white'
+        c('.div-footer').style.fontWeight = '500'
+        c('.header-left img').src = './images/cb-icon.png'
+        c('.dayOrnight').style.backgroundImage = 'url(https://images.vexels.com/media/users/3/205504/isolated/preview/f4cc22d8e599e53114df6f53cbfaa39a-ilustracao-de-lua-de-satelite.png)'
+        c('.dayOrnight').id = 'luaAtiva'
+    }
+}
